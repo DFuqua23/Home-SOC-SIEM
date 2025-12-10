@@ -5,3 +5,22 @@ The goal of this project was to gain hands-on experience configuring Azure resou
 
 ## Lab Architecture
 <img width="1000" height="500" alt="SIEM Lab Architecture" src="https://github.com/user-attachments/assets/e643a3b6-7b72-4304-b9d4-2ff033c08171" />
+
+# What I Built:
+
+In Microsoft Azure, I set up:
+AZ-VM01 – Windows 10 Virtual Machine
+Exposed to the public internet
+Allowed inbound RDP traffic
+Used as a basic honeypot for real-world attacks
+Azure Network + Firewall Configuration
+Modified NSG rules to allow external connections
+Confirmed the VM was reachable publicly
+Observed immediate brute-force attempts
+Log Analytics Workspace
+Connected VM security logs
+Enabled ingestion of Windows event data
+Microsoft Sentinel
+Activated SIEM capabilities
+Built an attack map using KQL
+Analyzed failed login attempts and attacker locations
