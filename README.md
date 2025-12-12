@@ -38,7 +38,7 @@ Analyzed failed login attempts and attacker locations
 ## SCREENSHOTS
 
 Built VMs
-<img width="100" height="700" alt="Built VMs" src="https://github.com/user-attachments/assets/a078b7d6-8364-4242-9c21-594d6250a35d" />
+<img width="1000" height="700" alt="Built VMs" src="https://github.com/user-attachments/assets/a078b7d6-8364-4242-9c21-594d6250a35d" />
 Ping VM from home machine to check connectivity
 <img width="1000" height="700" alt="Ping Vm" src="https://github.com/user-attachments/assets/9d2651d4-6e2e-474d-9459-12a9fee06db7" />
 Changed firewall rules to allow all incoming traffic
