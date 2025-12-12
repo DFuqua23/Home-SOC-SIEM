@@ -36,6 +36,7 @@ Activated SIEM capabilities
 Built an attack map using KQL
 Analyzed failed login attempts and attacker locations
 
+# What I Learned 
 
 
 ## SCREENSHOTS
