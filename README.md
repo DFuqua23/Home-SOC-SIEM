@@ -33,3 +33,14 @@ Microsoft Sentinel
 Activated SIEM capabilities
 Built an attack map using KQL
 Analyzed failed login attempts and attacker locations
+
+
+
+## SCREENSHOTS
+
+Built VMs
+![Uploading Built VMs.png…]()
+
+
+
+
