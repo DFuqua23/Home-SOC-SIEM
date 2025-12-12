@@ -51,7 +51,7 @@ Messing with the query window, short and expanded detail list
 1000 logon attempts in 1hr from the same IP, all 1 second apart from eachother meaning that a bot was used to autmatically brute force
 <img width="1920" height="1021" alt="KQL query on one IP" src="https://github.com/user-attachments/assets/2c3b5d29-fba4-4e7c-8c2b-31ae09140c03" />
 
-KQL Query to creat global attack map of logs generated 
+KQL Query to create global attack map of logs generated 
 <img width="1913" height="1035" alt="KQL Create Map Query" src="https://github.com/user-attachments/assets/5fe46553-cd1b-4c64-9616-f0f999c92811" />
 the map 
 <img width="1927" height="1035" alt="Attack Map" src="https://github.com/user-attachments/assets/2f226d81-45a2-40cb-92db-ee80fef33111" />
