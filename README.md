@@ -38,23 +38,23 @@ Analyzed failed login attempts and attacker locations
 ## SCREENSHOTS
 
 Built VMs
-<img width="1921" height="1026" alt="Built VMs" src="https://github.com/user-attachments/assets/a078b7d6-8364-4242-9c21-594d6250a35d" />
+<img width="100" height="700" alt="Built VMs" src="https://github.com/user-attachments/assets/a078b7d6-8364-4242-9c21-594d6250a35d" />
 Ping VM from home machine to check connectivity
-<img width="1920" height="1096" alt="Ping Vm" src="https://github.com/user-attachments/assets/9d2651d4-6e2e-474d-9459-12a9fee06db7" />
+<img width="1000" height="700" alt="Ping Vm" src="https://github.com/user-attachments/assets/9d2651d4-6e2e-474d-9459-12a9fee06db7" />
 Changed firewall rules to allow all incoming traffic
-<img width="1706" height="1021" alt="Firewall Turn Off" src="https://github.com/user-attachments/assets/9fffdcbb-4336-4ebc-857e-d3cdd95f3c3b" />
+<img width="1000" height="700" alt="Firewall Turn Off" src="https://github.com/user-attachments/assets/9fffdcbb-4336-4ebc-857e-d3cdd95f3c3b" />
 Set up Sentinel and connected logs from windows security events 
-<img width="1913" height="1031" alt="Setting Up Sentinel" src="https://github.com/user-attachments/assets/73496974-7a4c-4ade-98a6-e531396d5717" />
+<img width="1000" height="700" alt="Setting Up Sentinel" src="https://github.com/user-attachments/assets/73496974-7a4c-4ade-98a6-e531396d5717" />
 Messing with the query window, short and expanded detail list
-<img width="1920" height="1093" alt="Log Query Short" src="https://github.com/user-attachments/assets/bd37122c-f4fb-470a-95e2-23de7036322b" />
-<img width="1927" height="1035" alt="Log Expand Long" src="https://github.com/user-attachments/assets/205a768b-0cd7-4d0a-a333-62a35ce7bcdc" />
+<img width="1000" height="700" alt="Log Query Short" src="https://github.com/user-attachments/assets/bd37122c-f4fb-470a-95e2-23de7036322b" />
+<img width="1000" height="700" alt="Log Expand Long" src="https://github.com/user-attachments/assets/205a768b-0cd7-4d0a-a333-62a35ce7bcdc" />
 1000 logon attempts in 1hr from the same IP, all 1 second apart from eachother meaning that a bot was used to autmatically brute force
-<img width="1920" height="1021" alt="KQL query on one IP" src="https://github.com/user-attachments/assets/2c3b5d29-fba4-4e7c-8c2b-31ae09140c03" />
+<img width="1000" height="700" alt="KQL query on one IP" src="https://github.com/user-attachments/assets/2c3b5d29-fba4-4e7c-8c2b-31ae09140c03" />
 
 KQL Query to create global attack map of logs generated 
-<img width="1913" height="1035" alt="KQL Create Map Query" src="https://github.com/user-attachments/assets/5fe46553-cd1b-4c64-9616-f0f999c92811" />
+<img width="1000" height="700" alt="KQL Create Map Query" src="https://github.com/user-attachments/assets/5fe46553-cd1b-4c64-9616-f0f999c92811" />
 the map 
-<img width="1927" height="1035" alt="Attack Map" src="https://github.com/user-attachments/assets/2f226d81-45a2-40cb-92db-ee80fef33111" />
+<img width="1000" height="700" alt="Attack Map" src="https://github.com/user-attachments/assets/2f226d81-45a2-40cb-92db-ee80fef33111" />
 
 
 
