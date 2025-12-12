@@ -1,4 +1,3 @@
-<img width="1921" height="1026" alt="Built VMs" src="https://github.com/user-attachments/assets/ce0164be-6ab2-4a65-b2d2-8deb33a77704" /># Home-SOC-SIEM
 In this lab, I deployed a Windows 10 virtual machine inside Microsoft Azure, intentionally exposed it to the public internet, and used Microsoft Sentinel to collect attack data in real-time. The VM acted as a honeypot, allowing me to observe real-world malicious activity and understand how SIEM monitoring can detect brute force attempts, port scans, and other threats targeting public systems.
 The goal of this project was to gain hands-on experience configuring Azure resources, enabling logging, forwarding security events, and building visual analytics inside Sentinel.
 
