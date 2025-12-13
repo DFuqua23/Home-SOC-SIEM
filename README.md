@@ -36,7 +36,11 @@ Built an attack map using KQL
 Analyzed failed login attempts and attacker locations
 
 # What I Learned 
+This project provided a realistic look into how quickly exposed systems are attacked on the open internet. By intentionally exposing a VM, I experienced firsthand how automated brute-force bots rapidly target vulnerable hosts as soon their IP is made public. Seeing these attacks appear live in Sentinel reinforced the importance of proper firewall configurations, patching, network segmentation, and credential hardening. 
 
+Connecting the VM to Log Analytics and enabling Sentinel, helped me understand how logs flow from cloud resources into a SIEM and gain practice detecting malicious activity, enriching logs, and investigating potential threats. Running KQL queries taught me how to filter events, extract patterns, map attacker origins, and identify high-frequency indicators of brute-force behavior.
+
+Building visualizations such as a global attack heatmap showed me how SOC analysts can quickly spot trends and identify suspicious regions or abnormal spikes in activity. Overall, this project strengthened my understanding of SIEM operations, event analysis, incident investigation, and how misconfigurations can expose an organization to unnecessary risk.
 
 ## SCREENSHOTS
 
