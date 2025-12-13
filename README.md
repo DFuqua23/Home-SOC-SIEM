@@ -40,15 +40,11 @@ This project provided practical, hands-on experience in cloud security monitorin
 I observed firsthand how automated brute-force bots rapidly target vulnerable hosts. When I intentionally exposed the VM to the internet, there were roughly a thousand brute force attempts wihtin the first hour. Seeing these attack attempts appear live in Sentinel highlighted the absolute necessity of foundational security measures such as proper firewall configurations, regular patching, network segmentation, and using strong security for logins. <br/>
 
 
-In terms of security analysis, connecting the VM to Log Analytics and enabling Sentinel allowed me to see frist hand how logs flow from cloud resources flow into a SIEM system. This process taught me how a Security Operations Center uses SIEM tools to detect malicious activity, enrich logs, and investigate potential threats. <br/>
+In terms of security analysis, connecting the VM to Log Analytics and enabling Sentinel allowed me to see frist hand how logs flow from cloud resources into a SIEM system. This process taught me how a Security Operations Center uses SIEM tools to detect malicious activity, enrich logs, and investigate potential threats. <br/>
 This was my frist time really experimenting with KQL and I found it useful to help with filtering through events, extracting attack patterns, mapping the geographical origins of attackers, and identify indicators of frequent brute-force behavior.
 Furthermore, I learned the importance of visual communication in security by building visualizations, such as a global attack heatmap. This showed how SOC analysts can quickly spot emerging trends and identify suspicious geographical regions or abnormal spikes in activity.
-Overall, this exercise significantly strengthened my understanding of SIEM operations, event analysis, and incident investigation, clarifying how quickly and easily misconfigurations can expose an organization to unnecessary risk
 
-
-
-
-Building visualizations, such as a global attack heatmap, demonstrated how SOC analysts leverage data to quickly spot trends. These visualizations help in identifying suspicious regions or abnormal spikes in activity.
+Building a global attack heatmap, demonstrated how SOC analysts leverage data to quickly spot trends. Visualizations like this, help in identifying suspicious regions or abnormal spikes in activity.
 Overall, the project strengthened my understanding of SIEM operations, event analysis, incident investigation, and provided a good demonstration of how misconfigurations can expose an organization to unnecessary risk
 
 ## SCREENSHOTS
