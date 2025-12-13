@@ -7,11 +7,10 @@ The goal of this project was to gain hands-on experience configuring Azure resou
 
 | Component        | Role / Purpose |
 |-----------------|---------|
-| Microsoft Azure    | Hypervisor / virtualization platform | 
 |Azure Windows 10 VM   | Public-facing honeypot receiving real attack traffic | 
 | Microsoft Sentinel     | SIEM platform used to analyze and visualize attacker activity |
 |Log Analytics Workspace| Collected Windows security events and authentication logs  |
-| Organizational Units (OUs) & Groups | Simulate department based user organization |
+| Global Attack Map | Visualizes attacker IPs and country-of-origin using KQL |
 
 ## Lab Architecture
 <img width="1000" height="500" alt="SIEM Lab Architecture" src="https://github.com/user-attachments/assets/e643a3b6-7b72-4304-b9d4-2ff033c08171" />
