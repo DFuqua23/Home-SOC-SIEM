@@ -16,6 +16,11 @@ The goal of this project was to simulate an exposed asset, implement a Security 
 <img width="1000" height="500" alt="SIEM Lab Architecture" src="https://github.com/user-attachments/assets/e643a3b6-7b72-4304-b9d4-2ff033c08171" />
 
 # What I Built:
+<h2 style="color:red">⚠ WARNING</h2>
+<p><strong>This lab was conducted in an isolated VM evironment where the system was intentionally exposed to the public internet for lab and learning purposes ONLY. Do NOT use this configuration in production or on a personal machine.</strong></p>
+
+
+
 
 I built a functional security monitoring environment utilizing Microsoft Azure services: <br/>
 
