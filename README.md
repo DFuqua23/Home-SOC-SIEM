@@ -1,7 +1,7 @@
 # Azure SOC+SIEM Lab-Windows 10 Honeypot + Microsoft Sentinel
 
-In this lab, I deployed a Windows 10 virtual machine inside Microsoft Azure, intentionally exposed it to the public internet, and used Microsoft Sentinel to collect attack data in real-time. The VM acted as a honeypot, allowing me to observe real-world malicious activity and understand how SIEM monitoring can detect brute force attempts, port scans, and other threats targeting public systems.
-The goal of this project was to gain hands-on experience configuring Azure resources, enabling logging, forwarding security events, and building visual analytics inside Sentinel.
+In this lab, I deployed a Windows 10 virtual machine inside Microsoft Azure, intentionally exposed it to the public internet, and used  Microsoft Sentinel to collect attack data in real-time. The VM acted as a honeypot, allowing me to observe real-world malicious activity and understand how SIEM monitoring can detect brute force attempts, port scans, and other threats targeting public systems.
+The goal of this project was to simulate an exposed asset, implement a Security Information and Event Management (SIEM) solution, and practice the core functions of a Security Operations Center, including log analysis, incident investigation, and identifying critical hardening requirements.
 
 ## Lab Overview
 
@@ -17,35 +17,39 @@ The goal of this project was to gain hands-on experience configuring Azure resou
 
 # What I Built:
 
-In Microsoft Azure, I set up:
+I built a functional security monitoring environment utilizing Microsoft Azure services: <br/>
 
-AZ-VM01 – Windows 10 Virtual Machine
-Exposed to the public internet
-Allowed inbound RDP traffic
-Used as a basic honeypot for real-world attacks
-Azure Network + Firewall Configuration
-Modified NSG rules to allow external connections
-Confirmed the VM was reachable publicly
-Observed immediate brute-force attempts
-Log Analytics Workspace
-Connected VM security logs
-Enabled ingestion of Windows event data
-Microsoft Sentinel
-Activated SIEM capabilities
-Built an attack map using KQL
-Analyzed failed login attempts and attacker locations
+• Vulnerable Asset: Deployed a Windows 10 Virtual Machine and intentionally exposed it to the public internet to simulate a vulnerable host and attract automated attacks.<br/>
+• Data Collection: Connected the VM to an Azure Log Analytics Workspace to facilitate log ingestion.<br/>
+• Security Information and Event Management (SIEM): Enabled and configured Azure Sentinel to establish a functional SIEM system for centralized log analysis, detection, and incident investigation.<br/>
+• Analytical Tools: Ran KQL queries to filter events, map attacker origins, and extract indicators of brute-force patterns.<br/>
+• Visualization: Created a global attack heatmap to demonstrate how analysts quickly spot suspicious trends and abnormal spikes in activity.<br/>
+
+# Steps Performed:
+
+1. Created a Windows 10 virtual machine in Microsoft Azure and assigned it a public IP address so it could be accessed from the internet.
+
+2. Modified the VM’s NSG to allow all inbound traffic from any source, intentionally exposing the system to simulate a publicly accessible endpoint.
+
+3. Created a Log Analytics Workspace and connected the Windows 10 VM to it to begin collecting Windows security event logs.
+
+4. Enabled Microsoft Sentinel on the Log Analytics Workspace to provide SIEM functionality and confirmed that security events were being ingested correctly.
+
+5. With the VM exposed, I observed real-world brute-force attempts almost immediately, resulting in hundreds of security log events.
+
+6. Used KQL to query failed login attempts and extract relevant details such as timestamps and attacker IP addresses.
+
+7. Enriched the log data by mapping attacker IP addresses to geographic locations using Sentinel’s built-in geolocation features.
+
+8. Created a Sentinel workbook that visualizes attack origins on a global map using KQL query results.
+
+9. Analyzed attack patterns and documented the results using screenshots, queries, and visualizations for this lab.
 
 # What I Learned 
-This project provided practical, hands-on experience in cloud security monitoring, offering a clear demonstration of how rapidly systems are attacked when exposed to the open internet.
-I observed firsthand how automated brute-force bots rapidly target vulnerable hosts. When I intentionally exposed the VM to the internet, there were roughly a thousand brute force attempts wihtin the first hour. Seeing these attack attempts appear live in Sentinel highlighted the absolute necessity of foundational security measures such as proper firewall configurations, regular patching, network segmentation, and using strong security for logins. <br/>
 
+This project provided hands-on experience in cloud security monitoring and a realistic look into how quickly exposed systems are attacked on the open internet. By intentionally exposing a Virtual Machine, I experienced firsthand how automated brute-force bots rapidly target vulnerable hosts. Connecting the VM to Log Analytics and enabling Sentinel helped me to better understand the workflow of how logs flow from cloud resources into a SIEM system and how a Security Operations Center leverages these tools to detect malicious activity, enrich logs, and investigate potential threats. 
 
-In terms of security analysis, connecting the VM to Log Analytics and enabling Sentinel allowed me to see frist hand how logs flow from cloud resources into a SIEM system. This process taught me how a Security Operations Center uses SIEM tools to detect malicious activity, enrich logs, and investigate potential threats. <br/>
-This was my frist time really experimenting with KQL and I found it useful to help with filtering through events, extracting attack patterns, mapping the geographical origins of attackers, and identify indicators of frequent brute-force behavior.
-Furthermore, I learned the importance of visual communication in security by building visualizations, such as a global attack heatmap. This showed how SOC analysts can quickly spot emerging trends and identify suspicious geographical regions or abnormal spikes in activity.
-
-Building a global attack heatmap, demonstrated how SOC analysts leverage data to quickly spot trends. Visualizations like this, help in identifying suspicious regions or abnormal spikes in activity.
-Overall, the project strengthened my understanding of SIEM operations, event analysis, incident investigation, and provided a good demonstration of how misconfigurations can expose an organization to unnecessary risk
+This is my first practical encounter with data analysis involving running KQL queries. This experience taught me essential analytical techniques necessary for handling large volumes of log data. Specifically, I learned how to use KQL to effectively filter events and extract patterns from the logs. A major benefit of using these queries was the ability to rapidly map attacker origins and identify high-frequency indicators of brute-force behavior. This skill is crucial for understanding the nature of the attack and determining where threats are originating. Ultimately, the practice of running KQL queries was fundamental to strengthening my overall understanding of event analysis and incident investigation within the SIEM environment. Seeing these attacks appear live in Sentinel reinforced the importance of foundational security controls, including proper firewall configurations, patching, network segmentation, and credential hardening. Overall, this project strengthened my understanding of SIEM operations, event analysis, and incident investigation, highlighting how misconfigurations can expose an organization to unnecessary risk.
 
 ## SCREENSHOTS
 
