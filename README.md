@@ -58,15 +58,20 @@ This is my first practical encounter with data analysis involving running KQL qu
 
 This screenshot shows the Azure resource group containing all the starting core components of the lab environment. It includes the Windows 10 virtual machine, associated public IP address, network security group (NSG), network interface, virtual network, and managed disk. Viewing these resources together highlights how the VM is exposed to the internet and how network traffic and security controls are managed within Azure.
 <img width="1000" height="700" alt="Built VMs" src="https://github.com/user-attachments/assets/3c4ba7ce-c01e-4412-ae2e-7d5f7308dc14" />
+
 In Powershell, I pinged the virtual machine’s public IP address from my home system. A successful response confirmed that the VM was reachable from the internet, validating that external hosts and attackers could communicate with the system.
 <img width="1336" height="943" alt="Ping Vm" src="https://github.com/user-attachments/assets/cd93e524-4c93-4f43-bf5e-b38af4a0e40e" />
-Changed firewall rules to allow all incoming traffic
-<img width="1000" height="700" alt="Firewall Turn Off" src="https://github.com/user-attachments/assets/9fffdcbb-4336-4ebc-857e-d3cdd95f3c3b" />
+
+I disabled Windows Defender Firewall on the virtual machine to allow all incoming traffic. This configuration was intentionally used for lab purposes to ensure that attack traffic could reach the system without being blocked at the host level. Disabling the firewall helped simulate a poorly secured endpoint and allowed me to observe real-world attack behavior in the logs.
+<img width="1000" height="700" alt="Firewall Turn Off" src="https://github.com/user-attachments/assets/89abf795-b14b-4811-a4ef-60d0db97aebf" />
+
 Set up Sentinel and connected logs from windows security events 
 <img width="1000" height="700" alt="Setting Up Sentinel" src="https://github.com/user-attachments/assets/73496974-7a4c-4ade-98a6-e531396d5717" />
+
 Messing with the query window, short and expanded detail list
 <img width="1000" height="700" alt="Log Query Short" src="https://github.com/user-attachments/assets/bd37122c-f4fb-470a-95e2-23de7036322b" />
 <img width="1000" height="700" alt="Log Expand Long" src="https://github.com/user-attachments/assets/205a768b-0cd7-4d0a-a333-62a35ce7bcdc" />
+
 1000 logon attempts in 1hr from the same IP, all 1 second apart from eachother meaning that a bot was used to autmatically brute force
 <img width="1000" height="700" alt="KQL query on one IP" src="https://github.com/user-attachments/assets/2c3b5d29-fba4-4e7c-8c2b-31ae09140c03" />
 
