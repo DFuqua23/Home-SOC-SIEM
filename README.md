@@ -56,10 +56,10 @@ This is my first practical encounter with data analysis involving running KQL qu
 
 ## SCREENSHOTS
 
-Built VMs
-<img width="1000" height="700" alt="Built VMs" src="https://github.com/user-attachments/assets/a078b7d6-8364-4242-9c21-594d6250a35d" />
-Ping VM from home machine to check connectivity
-<img width="1000" height="700" alt="Ping Vm" src="https://github.com/user-attachments/assets/9d2651d4-6e2e-474d-9459-12a9fee06db7" />
+This screenshot shows the Azure resource group containing all the starting core components of the lab environment. It includes the Windows 10 virtual machine, associated public IP address, network security group (NSG), network interface, virtual network, and managed disk. Viewing these resources together highlights how the VM is exposed to the internet and how network traffic and security controls are managed within Azure.
+<img width="1000" height="700" alt="Built VMs" src="https://github.com/user-attachments/assets/3c4ba7ce-c01e-4412-ae2e-7d5f7308dc14" />
+In Powershell, I pinged the virtual machine’s public IP address from my home system. A successful response confirmed that the VM was reachable from the internet, validating that external hosts and attackers could communicate with the system.
+<img width="1336" height="943" alt="Ping Vm" src="https://github.com/user-attachments/assets/cd93e524-4c93-4f43-bf5e-b38af4a0e40e" />
 Changed firewall rules to allow all incoming traffic
 <img width="1000" height="700" alt="Firewall Turn Off" src="https://github.com/user-attachments/assets/9fffdcbb-4336-4ebc-857e-d3cdd95f3c3b" />
 Set up Sentinel and connected logs from windows security events 
