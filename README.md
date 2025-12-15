@@ -69,8 +69,10 @@ Set up Sentinel and connected logs from windows security events
 <img width="1000" height="700" alt="Setting Up Sentinel" src="https://github.com/user-attachments/assets/73496974-7a4c-4ade-98a6-e531396d5717" />
 
 Messing with the query window, short and expanded detail list
-<img width="1000" height="700" alt="Log Query Short" src="https://github.com/user-attachments/assets/bd37122c-f4fb-470a-95e2-23de7036322b" />
-<img width="1000" height="700" alt="Log Expand Long" src="https://github.com/user-attachments/assets/205a768b-0cd7-4d0a-a333-62a35ce7bcdc" />
+<p align="center">
+ <img width="800" height="700" alt="Log Query Short" src="https://github.com/user-attachments/assets/b8668846-04bc-4399-be6d-f898b3351fff" />
+ <img width="800" height="700" alt="Log Expand Long" src="https://github.com/user-attachments/assets/3282aeec-5310-4563-88b2-4ac75ae86399" />
+</p>
 
 1000 logon attempts in 1hr from the same IP, all 1 second apart from eachother meaning that a bot was used to autmatically brute force
 <img width="1000" height="700" alt="KQL query on one IP" src="https://github.com/user-attachments/assets/2c3b5d29-fba4-4e7c-8c2b-31ae09140c03" />
