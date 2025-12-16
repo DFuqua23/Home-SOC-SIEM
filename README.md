@@ -65,7 +65,7 @@ In Powershell, I pinged the virtual machine’s public IP address from my home s
 I disabled Windows Defender Firewall on the virtual machine to allow all incoming traffic. This configuration was intentionally used for lab purposes to ensure that attack traffic could reach the system without being blocked at the host level. Disabling the firewall helped simulate a poorly secured endpoint and allowed me to observe real-world attack behavior in the logs.
 <img width="1000" height="700" alt="Firewall Turn Off" src="https://github.com/user-attachments/assets/89abf795-b14b-4811-a4ef-60d0db97aebf" />
 
-Set up Sentinel and connected logs from windows security events 
+Configured microsoft Sentinel to where Windows security event collection was enabled for the virtual machine. By allowing Windows Event logs to be ingested into the Log Analytics Workspace, this step ensures that authentication attempts and security-related activity from the VM are available for analysis in Microsoft Sentinel.
 <img width="1000" height="700" alt="Setting Up Sentinel" src="https://github.com/user-attachments/assets/73496974-7a4c-4ade-98a6-e531396d5717" />
 
 Messing with the query window, short and expanded detail list
