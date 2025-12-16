@@ -81,7 +81,8 @@ I set a microsoft Sentinel query filtering security events to a single source IP
 This screenshot shows the KQL query used to generate the global attack map in Microsoft Sentinel. The query extracts failed authentication events, parses source IP addresses, and enriches the data with geographic information so the results can be visualized on a world map. This demonstrates how raw log data is transformed into actionable security visualizations.
 <img width="1000" height="700" alt="KQL Create Map Query" src="https://github.com/user-attachments/assets/5fe46553-cd1b-4c64-9616-f0f999c92811" />
  This is the global attack map generated in Microsoft Sentinel using Windows Security Event ID 4625 (failed logon attempts). The map visualizes the geographic origin of IP addresses repeatedly attempting to authenticate to the exposed virtual machine.The objective was to map all the brute force attempts on the VM by region. The major heat areas on the map indicate that the bulk of the attacks were coming from IP Addresses in Jordanow Poland and Tilburg Netherlands.
-<img width="1000" height="700" alt="Heat Map white" src="https://github.com/user-attachments/assets/4e028512-268c-42fd-92ee-dc62c80f70c2" />
+<img width="1000" height="700" alt="Attack Map" src="https://github.com/user-attachments/assets/0c2d71f3-21f0-40b2-bd74-459438aede7a" />
+
 
 
 
