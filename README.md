@@ -68,19 +68,19 @@ I disabled Windows Defender Firewall on the virtual machine to allow all incomin
 Windows security event collection was enabled for the virtual machine. By allowing Windows Event logs to be ingested into the Log Analytics Workspace, this step ensures that authentication attempts and security-related activity from the VM are available for analysis in Microsoft Sentinel.
 <img width="1000" height="700" alt="Setting Up Sentinel" src="https://github.com/user-attachments/assets/73496974-7a4c-4ade-98a6-e531396d5717" />
 
-Messing with the query window, short and expanded detail list
+I used KQL within Microsoft Sentinel to query Windows security events collected from the virtual machine. The initial query retrieves raw security event data, and the refined query narrows the results to highlight key investigation fields such as time generated, account name, computer name, activity type, and source IP address. This step demonstrates how raw logs can be filtered and structured to support efficient security investigations.
 <p align="center">
 <img width="900" height="650" alt="Log Expand Long" src="https://github.com/user-attachments/assets/a00a1554-a80e-44dc-9ba7-3c095a422a04" />
 <img width="900" height="650" alt="Log Query Short" src="https://github.com/user-attachments/assets/ce1441aa-b931-4642-b404-ae5396f35e18" />
 
 </p>
 
-1000 logon attempts in 1hr from the same IP, all 1 second apart from eachother meaning that a bot was used to autmatically brute force
+I set a microsoft Sentinel query filtering security events to a single source IP address with repeated failed logon attempts. The results reveal over 1,000 failed authentication attempts occurring roughly one second apart within a short time window, which is a strong indicator of automated brute-force activity. Ordering the events by time generated helps highlight the consistent attack pattern and confirms the behavior was not caused by a legitimate user.
 <img width="1000" height="700" alt="KQL query on one IP" src="https://github.com/user-attachments/assets/2c3b5d29-fba4-4e7c-8c2b-31ae09140c03" />
 
-KQL Query to create global attack map of logs generated 
+This screenshot shows the KQL query used to generate the global attack map in Microsoft Sentinel. The query extracts failed authentication events, parses source IP addresses, and enriches the data with geographic information so the results can be visualized on a world map. This demonstrates how raw log data is transformed into actionable security visualizations.
 <img width="1000" height="700" alt="KQL Create Map Query" src="https://github.com/user-attachments/assets/5fe46553-cd1b-4c64-9616-f0f999c92811" />
-the map 
+ This is the global attack map generated in Microsoft Sentinel using Windows Security Event ID 4625 (failed logon attempts). The map visualizes the geographic origin of IP addresses repeatedly attempting to authenticate to the exposed virtual machine.The objective was to map all the brute force attempts on the VM by region. The major heat areas on the map indicate that the bulk of the attacks were coming from Jordanow Poland and Tilburg Netherlands.
 <img width="1000" height="700" alt="Attack Map" src="https://github.com/user-attachments/assets/2f226d81-45a2-40cb-92db-ee80fef33111" />
 
 
